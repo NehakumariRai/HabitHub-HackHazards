@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HabitHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-title">HabitHub</div>
+    <div class="nav-links">
+      <button id="home-tab" class="nav-button active">Home</button>
+      <button id="leisure-tab" class="nav-button">Leisure</button>
+    </div>
+  </nav>
+  <main id="home-section" class="main-section">
+    <div class="quote">
+      “Habit needs discipline, so does you…”
+    </div>
+    <div class="centered">
+      <button id="makeHabitBtn" class="primary-btn">Make Habit</button>
+    </div>
+    <div id="habitCardsContainer" class="cards-container">
+    </div>
+  </main>
+  <main id="leisure-section" class="main-section hidden">
+  </main>
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div id="modalContent" class="modal-content">
+    </div>
+  </div>
+  <script src="jsPDF/jspdf.umd.min.js"></script>
+  <script src="pdfGenerator.js"></script>
+  <script src="utils.js"></script>
+  <script src="popup.js"></script>
+
+</body>
+</html>

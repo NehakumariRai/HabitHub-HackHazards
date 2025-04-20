@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "HabitHub",
+    "version": "1.0",
+    "description": "Build consistent habits with discipline, reflection, and motivation. One habit at a time.",
+    "icons": {
+      "48": "public/icon.png"
+    },
+    "permissions": [
+      "notifications",
+      "alarms",
+      "storage"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "src/background.js"
+    },
+    "action": {
+      "default_popup": "src/popup.html",
+      "default_icon": {
+        "48": "public/icon.png"
+      }
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "src/leisure.html",
+          "src/jsPDF/jspdf.umd.min.js",
+          "icon.png"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+  }
+  
