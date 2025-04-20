@@ -20,7 +20,9 @@ Anyone who wants to build sustainable, distraction-free habits without relying o
 
 🧠 Team & Development Approach
 Solo Developer: Nehakumari Rai
+
 GitHub: [Nehakumari Rai](https://github.com/NehakumariRai)
+
 Role: Web Developer
 
 
